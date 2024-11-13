@@ -87,7 +87,7 @@ main{
 
 .bio{
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .job-1{
     grid-area: job1;
@@ -108,6 +108,50 @@ main{
     border-bottom: $secondary-color 5px solid;
 }
 }
+
+
+//Work Experience start
+.work-info{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    'work1'
+    'work2' 
+    'work3'
+    'work4' 
+    'work5';
+    grid-template-rows: repeat(5,1fr);
+
+
+.work-1{
+    grid-area: work1;
+
+}
+.work-2{
+    grid-area: work2;
+
+}
+.work-3{
+    grid-area: work3;
+
+}
+.work-4{
+    grid-area: work4;
+
+}
+.work-5{
+    grid-area: work5;
+
+}
+
+.work{
+    background: lighten($primary-color,5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+}
+}
+//Work exepriend end
+
 
 #main-footer{
     text-align: center;
